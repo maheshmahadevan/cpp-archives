@@ -1,0 +1,25 @@
+1)
+Vectors do not support front insertion , deque and list support front insertion. All containers support back insertion.
+
+2)
+Using push front will inverse the behavior in which data was pushed into container.
+./studio5 
+Deque print
+1 2 3 4 5 
+List print
+1 2 3 4 5 
+Vector list
+1 2 3 4 5 
+
+3) List does not support Random Access , Vector and deque supports
+
+Deque print
+1 2 3 4 5 
+Vector list
+1 2 3 4 5 
+
+4) Set only allows insertion to be done once , i.e duplicate entries are not allowed.  Set sorts entries after insertion.
+Multiset allows duplicate entries. Multiset also sorts entries after insertion.
+
+5)
+values inserted map<int, const char *> are sorted after insertion and are printed out in sorted fashion. Wheras values inserted to map< const char *,int> are printed in same order as they were inserted. Both map are similar to set as they do not allow inserting duplicate values

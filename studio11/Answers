@@ -1,0 +1,34 @@
+1)
+
+mahesh@mahesh-pc:~/cse532/WrapperFacade/studio11$ ./studio11 
+print
+print
+this
+this
+material
+material
+
+2)
+
+Created an class ActiveObject which extends ACE_Task<ACE_MT_SYNCH>, it has a default constructor and svc method. svc method uses its getq method to pick any messages present in ACE_Message_Queue and prints on standard output. main function was changed to create new ACE_Message_Block after cin , initialize instance of ActiveObject and calls its activate method , uses putq method to enquque data into ACE_Message_Queue
+
+3) Used synchroniztion examples from last studio ,   use activate method with 2 parameters to spawn the number of threads passed in argument. Observed that messages are displayed but are interleaved now.
+
+4)
+mahesh@mahesh-pc:~/cse532/WrapperFacade/studio11$ ./studio11 2
+Thread startedThread started
+
+now will try to test a big line with counter
+[3069684592] counter 1 will [3069684592]
+[3069684592] counter 2 try [3069684592]
+[3069684592] counter 3 to [3069684592]
+[3078077296] counter 1 now [3078077296]
+[3078077296] counter 2 a [3078077296]
+[3078077296] counter 3 big [3078077296]
+[3078077296] counter 4 line [3078077296]
+[3078077296] counter 5 with [3078077296]
+[3078077296] counter 6 counter [3078077296]
+[3069684592] counter 4 test [3069684592]
+
+
+
